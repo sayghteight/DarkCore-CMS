@@ -9,8 +9,10 @@ require_once 'core/functions/board_functions.php';
 $user_account = new account;
 ?>
 	<title>GamingZeta - THW</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<script type="text/javascript"
 		src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    
 </head>
 <body>
 	<div id="fb-root"></div>
@@ -34,18 +36,18 @@ $user_account = new account;
 		<div id='index-content-left'>
 			<div id='main-tools'>
 				<div class='main-tools-box'>
-                    <h1 class="main-tools-head-text">WELCOME TO GAMINGZETA</h1>
-                    <div class="main-tools-description">Gaming zeta is a fairly new server 1 year and few months old , so far we offer a max level 255 realm wich is stil under development , here are some useful links for you</div>
+                    <h1 class="main-tools-head-text">BIENVENIDOS A LEYENDAS DE NORDRASSIL</h1>
+                    <div class="main-tools-description">Leyendas de Nordrassil es un servidor de cas&iacute; 3 a&ntilde;os de rol, contamos con un mont&oacute;n de razas custom y con un gran trabajo de customizaci&oacute;n </div>
                     <ul>
-                        <li class="main-tools-li"><a href="armory">ARMORY</a></li>
-                        <li class="main-tools-li"><a href="guides">GUIDES & DOWNLOADS</a></li>
-                        <li class="main-tools-li"><a href="rules">RULES</a></li>
+                        <li class="main-tools-li"><a href="armory">ARMERIA</a></li>
+                        <li class="main-tools-li"><a href="guides">GUIAS Y DESCARGAS</a></li>
+                        <li class="main-tools-li"><a href="rules">REGLAS</a></li>
                     </ul>
 				</div>
 			</div>
 			<div id='lastnews'>
 			<?php $data_news = new TopicsData; $data_news->construct_index()?>
-				<div class='lastnews-head-text'>LATEST NEWS & ANNOUNCEMENTS</div>
+				<div class='lastnews-head-text'>Ultimas noticias y Anuncios</div>
                 <div class="newsdivider"></div>
 				<div class='newsthumb'>
 					<div class='newsthumbicon'><img src='<?php echo get_avatar_byid($data_news->last_topic_index['autor']);?>' alt='<?php echo $data_news->last_topic_index['title'];?>' width="100%" height="100%"/></div>

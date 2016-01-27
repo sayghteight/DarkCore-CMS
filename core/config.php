@@ -10,7 +10,7 @@ $GLOBALS['DB_CHARACTERS'] = 'characters';
 
 //Was doing some tests to change the headers of some functions Add here your database login informations instead
 function connect($shag,$sgsg,$gsg){
-	$con = mysqli_connect('127.0.0.1','root','ascent');
+	$con = mysqli_connect('127.0.0.1','root','xxxxx');
 	if (!$con) {
 		printf("Connect failed: %s\n", mysqli_connect_error());
 		exit();
